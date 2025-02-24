@@ -1,0 +1,137 @@
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  body {
+    background-image: url('./acutegif.gif'); /* Path to your GIF */
+    background-size: cover; /* Ensure the GIF covers the entire screen */
+    background-position: center; /* Center the GIF */
+    background-repeat: no-repeat; /* Prevent the GIF from repeating */
+    font-family: 'Lucida Console', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    color: #d8e9ef;
+  }
+  
+  /* Semi-transparent overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1; /* Place the overlay behind the content */
+  }
+  
+  /* App Container */
+  .app-container {
+    position: relative;
+    z-index: 1; /* Ensure the app content is above the overlay */
+    width: 250px;
+    height: 420px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  /* Typography */
+  h1 {
+    margin: 0 auto 10px auto;
+    color: #d8e9ef;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  /* App Message */
+  .app-message {
+    height: 20px;
+    margin: 10px auto 20px auto;
+  }
+  
+  /* Circle Styles */
+  .app-circle {
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .circle-shape {
+    pointer-events: none;
+  }
+  
+  .semi-circle {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    box-sizing: border-box;
+    border: solid 6px;
+  }
+  
+  .left-side {
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+    transform: rotate(0deg);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-right: none;
+    z-index: 1;
+  }
+  
+  .right-side {
+    top: 0;
+    left: 100px;
+    transform-origin: left center;
+    transform: rotate(0deg);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-left: none;
+  }
+  
+  .circle {
+    border-color: #fcfcfc;
+  }
+  
+  .circle-mask {
+    border-color: #e85a71;
+  }
+  
+  /* Counter Box */
+  .app-counter-box {
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: 250%;
+    position: relative;
+    top: 50px;
+    color: #d8e9ef;
+  }
+  
+  /* Button Styles */
+  button {
+    position: relative;
+    top: 50px;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #d8e9ef;
+    cursor: pointer; /* Add cursor pointer for better UX */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  button:hover {
+    color: #90c0d1;
+  }
+
+
+  
